@@ -6,8 +6,6 @@ const pet = {
     name: "Benny",
 };
 
-const petDetail = document.querySelector(".pet-detail");
-
 let friendly = "Yes";
 
 // pet.isFriendly === false
@@ -26,9 +24,10 @@ if (pet.age) {
     petAge = pet.age;
 }
 
-petDetail.innerHTML = `
-<h4 style="color: ${petColour}">${pet.type}</h4>
-<p>Age: ${petAge}</p>
-<p>Friendly: ${friendly}</p>
-<p style="color: ${petColour}">Name: ${pet.name} </p>
-`;
+const heading = document.querySelector("h4");
+const age = document.querySelector(".age");
+const friendlyContainer = document.querySelector(".friendly");
+
+heading.innerHTML = pet.type;
+age.innerHTML = petAge;
+friendlyContainer.innerHTML = friendly;
