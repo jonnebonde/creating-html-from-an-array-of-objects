@@ -7,6 +7,7 @@ const pet = {
 };
 
 
+
 let friendly = "Yes";
 
 if(pet.isFriendly === false)  {
@@ -33,5 +34,5 @@ const age = document.querySelector(".age");
 const friendlyContainer = document.querySelector(".friendly");
 
 heading.innerHTML = pet.type;
-age.innerHTML = petAge;
+age.innerHTML = petAge; 
 friendlyContainer = friendly;
