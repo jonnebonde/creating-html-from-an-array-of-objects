@@ -1,9 +1,9 @@
 const pet = {
     type: "cat",
-    colour: "brown",
+    colour: "red",
     age: 20,
     isFriendly: true,
-    name: "Benny",
+    name: "Benny"
 };
 
 
@@ -16,8 +16,24 @@ if(pet.isFriendly === false)  {
     friendly = "no";
 } 
 
+const petColour = pet.colour;
+
+let petAge = "Unknown";
+
+/* if(pet.age !== undefined && pet.age !== null && pet.age !== false && pet.age !== 0) {
+    petAge = pet.age;
+} */
+
+// or this way (thay are the same)
+
+if(pet.age) {
+    petAge = pet.age;
+}
+
 petDetail.innerHTML = `
-<h4 style="color: ${pet.colour}">${pet.type}</h4>
-<p>Age: ${pet.age}</p>
-<p>Friendly: ${friendly}</p>`;
+<h4 style="color: ${petColour}">${pet.type} </h4>
+<p>Age: ${petAge} </p>
+<p>Friendly: ${friendly} </p>
+<p style="color: ${petColour}">Name: ${pet.name} </p>
+`;
 
