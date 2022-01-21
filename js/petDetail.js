@@ -1,7 +1,7 @@
 const pet = {
     type: "pig",
     colour: "#ff0000",
-    age: 0,
+    age: 20,
     isFriendly: true,
     name: "Benny",
 };
